@@ -104,6 +104,7 @@ This VHDL code is generated and may require additional customization or integrat
 ---
 
 # Project - [#3_Filter_cascaded](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%233_Filter_cascaded)
+---
 # Cascaded Filter VHDL Design
 
 **TotalFilter** is a VHDL design for implementing a cascaded Infinite Impulse Response (IIR) filter structure. It consists of multiple filter components connected in series to create a complex filter system.
@@ -142,3 +143,42 @@ The architecture of the `TotalFilter` entity instantiates multiple filter compon
 To use this VHDL implementation of the `TotalFilter` design, you should integrate it into your FPGA or ASIC project. The `TotalFilter` design requires appropriate clocking and reset handling, and the input data should be supplied to the `f_en` port. The resulting output will be available at the `f_out` port.
 
 The design can be further customized or extended to meet your specific signal processing requirements.
+---
+
+# Project - [#4_4bit_adder](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%234_4bit_adder)
+---
+# Adder4 VHDL Design
+
+**adder4** is a VHDL design for a 4-bit binary adder. It is composed of four full-adder components connected in series to add two 4-bit binary numbers. Below is a description of the key information and structure presented in this README.
+
+## Overview
+The **adder4** design is a 4-bit binary adder implemented in VHDL. It takes two 4-bit binary numbers as input and computes their sum along with a carry-out bit. The design consists of multiple full-adder components, each responsible for adding one bit of the input numbers.
+
+## Design Information
+- **Design Title:** adder4
+- **Design Unit:** adder4
+- **Author:** mostafa piran
+
+## Description
+The **adder4** design is a 4-bit binary adder, but the README currently lacks detailed information about its specifications, purpose, and use. A description of the design's functionality and its role in a larger system is essential for potential users to understand its utility.
+
+## Design Components
+The **adder4** design consists of multiple full-adder components. These components are instantiated within the architecture of the adder4 entity and connected to perform the addition of two 4-bit binary numbers.
+
+## Module Interface
+The `adder4` VHDL module has the following ports:
+- `cin`: Carry-in input
+- `a`: 4-bit binary input
+- `b`: 4-bit binary input
+- `cout`: Carry-out output
+- `s`: 4-bit binary sum output
+
+## Architecture Details
+The architecture of the `adder4` entity instantiates four full-adder components (U1, U2, U3, U4) and connects them in a cascaded manner to add the corresponding bits of the input numbers. The final sum is presented at the `s` output, and the carry-out is available at the `cout` output.
+
+## How to Use
+To use this VHDL implementation of the `adder4` design, you should integrate it into your FPGA or ASIC project. The `adder4` design expects 4-bit binary input numbers (a and b) and a carry-in (cin) value. After processing, the sum of the two numbers will be available at the `s` output, and the carry-out will be available at the `cout` output.
+
+Ensure proper clocking and reset handling in your design for accurate operation.
+---
+

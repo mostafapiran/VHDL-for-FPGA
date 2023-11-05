@@ -56,7 +56,7 @@ Special thanks to the VHDL community and the developers of VHDL tools that make 
 
 ---
 
-# Project - [#2_IIR_filter](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%232_IIR_felter)
+# Project - [#2_IIR_filter](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%232_IIR_filter)
 ---
 # filter_50_100_150_200_250 MHz VHDL Implementation
 
@@ -102,4 +102,43 @@ For testing, you can provide various test stimuli such as step, ramp, or chirp s
 This VHDL code is generated and may require additional customization or integration to meet the specific requirements of your project. It is essential to thoroughly understand the generated code and the filter's behavior to ensure successful integration and operation in your application.
 
 ---
-# Project - [#1_RNG_LFSR](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%231_RNG_LFSR)
+
+# Project - [#3_Filter_cascaded](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%233_Filter_cascaded)
+# Cascaded Filter VHDL Design
+
+**TotalFilter** is a VHDL design for implementing a cascaded Infinite Impulse Response (IIR) filter structure. It consists of multiple filter components connected in series to create a complex filter system.
+
+## Overview
+The **TotalFilter** design is a cascaded digital signal processing system that processes input data through a sequence of IIR filter stages. These filter stages are represented by individual components, each with its filter characteristics.
+
+## Design Information
+- **Design Title:** TotalFilter
+- **Design Unit:** felterIIR
+- **Author:** mostafa piran
+
+## Description
+The **TotalFilter** design is a cascaded filter system intended for digital signal processing. The specific details of the filter structure and its characteristics, as well as any additional information about the design's purpose, should be provided here. However, the README currently lacks detailed information about the filter's specifications and intended use.
+
+## Design Components
+The **TotalFilter** design comprises multiple filter components. These components are instantiated within the architecture of the TotalFilter entity. The components used in this design are:
+- `filter_50`
+- `filter_100`
+- `filter_150`
+- `filter_200`
+- `filter_250`
+
+## Module Interface
+The `TotalFilter` VHDL module has the following ports:
+- `clk`: Clock input
+- `clk_en`: Clock enable input
+- `f_en`: Input data of type real
+- `reset`: Reset input
+- `f_out`: Output data of type real
+
+## Architecture Details
+The architecture of the `TotalFilter` entity instantiates multiple filter components (listed above) and interconnects them to create a cascaded filter structure. The input data `f_en` is processed sequentially through each filter component, and the final output is provided at the `f_out` port.
+
+## How to Use
+To use this VHDL implementation of the `TotalFilter` design, you should integrate it into your FPGA or ASIC project. The `TotalFilter` design requires appropriate clocking and reset handling, and the input data should be supplied to the `f_en` port. The resulting output will be available at the `f_out` port.
+
+The design can be further customized or extended to meet your specific signal processing requirements.

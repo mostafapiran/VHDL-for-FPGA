@@ -56,7 +56,7 @@ Special thanks to the VHDL community and the developers of VHDL tools that make 
 
 ---
 
-# Project - [#2_IIR_felter](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%232_IIR_felter)
+# Project - [#2_IIR_filter](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%232_IIR_felter)
 ---
 # filter_50_100_150_200_250 MHz VHDL Implementation
 
@@ -102,3 +102,4 @@ For testing, you can provide various test stimuli such as step, ramp, or chirp s
 This VHDL code is generated and may require additional customization or integration to meet the specific requirements of your project. It is essential to thoroughly understand the generated code and the filter's behavior to ensure successful integration and operation in your application.
 
 ---
+# Project - [#1_RNG_LFSR](https://github.com/mostafapiran/VHDL-for-FPGA/tree/main/%231_RNG_LFSR)

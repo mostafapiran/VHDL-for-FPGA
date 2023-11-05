@@ -12,8 +12,7 @@ This VHDL code represents a simple pseudorandom number generator (PRNG) designed
 ## Description
 
 - **File**: `RNG.vhd`
-- **Author**: [Your Name]
-- **Company**: [Your Company, if applicable]
+- **Author**: mostafa piran
 - **Generated**: Sun May 3 17:50:42 2020
 - **Version**: 1.0 (You can update the version number as needed)
 
